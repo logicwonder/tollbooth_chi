@@ -3,8 +3,8 @@ package tollbooth_chi
 import (
 	"net/http"
 
-	"github.com/didip/tollbooth"
-	"github.com/didip/tollbooth/limiter"
+	"github.com/logicwonder/tollbooth"
+	"github.com/logicwonder/tollbooth/limiter"
 )
 
 func LimitHandler(lmt *limiter.Limiter) func(http.Handler) http.Handler {
